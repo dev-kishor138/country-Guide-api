@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Merriweather', serif;
+}
+.container
+{
+    background: #BCEAD5;
+    width: 80vW;
+    max-width: 37.5em;
+    padding: 3em 2.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.62em;
+    box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25);
+}
+.search-box
+{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25em;
+    margin-bottom: 30px;
+}
+.search-box button
+{
+    font-size: 1em;
+    background: #3d64e6;
+    color: #fff;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 1.5em;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+}
+.search-box input
+{
+    font-size: 1em;
+    padding: 0 0.62em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #3d64e6;
+    color: #222a43;
+    background: transparent;
+    font-family: 'Merriweather', serif;
+}
+.result
+{
+    position: relative;
+}
+.result .img-box
+{
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.result .img-box img
+{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.result .text-box
+{
+    position: relative;
+}
+.img-box h3
+{
+    font-size: 25px;
+    color: #333;
+}
+.text-box h4
+{
+    font-size: 18px;
+    margin: 5px 0;
+    color: #444;
+}
+p
+{
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+    font-weight: 500;
+}
+
+
+@media (max-width: 414px){
+    .container
+    {
+        width: 98vW;
+        padding: 3em 1em;
+    }
+    .search-box
+    {
+        gap: 1em;
+    }
+    .search-box button
+    {
+        font-size: 0.8em;
+    }
+    .search-box input
+    {
+        font-size: 0.9em;
+        border-bottom: 1px solid #3d64e6;
+    }
+    .result .img-box img
+    {
+        width: 70%;
+    }
+    .img-box h3
+    {
+        font-size: 20px;
+    }
+    .text-box h4
+    {
+        font-size: 16px;
+    }
+    p
+    {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 280px){
+    .container
+    {
+        width: 98vW;
+        padding: 2em 1em;
+    }
+    .search-box
+    {
+        gap: 0.5em;
+    }
+    .search-box button
+    {
+        font-size: 0.5em;
+    }
+    .search-box input
+    {
+        font-size: 0.5em;
+    }
+    .img-box h3
+    {
+        font-size: 15px;
+    }
+    .text-box h4
+    {
+        font-size: 13px;
+    }
+    p
+    {
+        font-size: 11px;
+    }
+}
